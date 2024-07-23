@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
+  --monteserrat: "Montserrat", sans-serif;
+  --fraunces: "Fraunces", serif;
+
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 0.75rem;
+}
+
+section {
+  width: 80%;
+  background-color: var(--white);
+  height: auto;
+  border-radius: 0.75rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-size: 0.875rem;
+  font-family: var(--monteserrat);
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.image-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-details {
+  width: 100%;
+  padding: 25px;
+}
+
+.tag {
+  color: var(--dark-grayish-blue);
+  font-family: var(--monteserrat);
+  letter-spacing: 3px;
+}
+
+.title, .discounted {
+  font-family: var(--fraunces);
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.title {
+  line-height: 1;
+  color: var(--very-dark-blue);
+  
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.discounted {
+  font-family: var(--fraunces);
+  color: var(--dark-cyan);
+}
+
+.actual {
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  font-family: var(--monteserrat);
+  font-weight: 700;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+button > img {
+  width: 1.2rem;
+}
+
+
+
